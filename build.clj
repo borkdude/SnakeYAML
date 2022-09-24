@@ -5,7 +5,7 @@
 
 (def project (-> (edn/read-string (slurp "deps.edn"))
                  :aliases :neil :project))
-(def lib (or (:name project) 'io.github.borkdude/SnakeYAML))
+(def lib (or (:name project) 'io.github.borkdude/snakeyaml))
 
 ;; use neil project set version 1.2.0 to update the version in deps.edn
 
